@@ -1,6 +1,11 @@
 import media
 import fresh_tomatoes
 
+#media creates the movie class and fresh_tomatoes creates the html file for the website
+
+#create 6 objects of the class "Movie". Each object has a title, description,
+#poster, trailer, and rating
+
 toy_story = media.Movie("Toy Story",
                         "A story of a boy and his toys that come to life.",
                         "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
@@ -38,8 +43,10 @@ kingsman = media.Movie("Kingsman",
                        "R")
 
 
+#create an array of the Movie objects
 movies = [toy_story, avatar, warrior, ex_machina, chappie, kingsman]
 
+#run freash_tomatoes file to create html file
 fresh_tomatoes.open_movies_page(movies)
 
 
